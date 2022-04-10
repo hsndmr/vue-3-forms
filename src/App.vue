@@ -2,13 +2,15 @@
 import { ref } from "vue";
 
 import BaseInput from "./components/BaseInput.vue";
-const input = ref("");
+const form = ref({
+  input: "",
+});
 </script>
 
 <template>
   <form>
-    <BaseInput type="text" label="Input" v-model="input" />
-    <div>{{ input }}</div>
+    <BaseInput type="text" label="Input" v-model="form.input" />
+    <div>{{ form.input }}</div>
   </form>
 </template>
 
