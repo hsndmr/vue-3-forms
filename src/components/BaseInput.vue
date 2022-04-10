@@ -9,6 +9,7 @@ defineProps<{
   <label>{{ label }}</label>
   <br />
   <input
+    v-bind="$attrs"
     :placeholder="(label as any)"
     class="form-input"
     :value="modelValue"
