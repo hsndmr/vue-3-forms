@@ -7,7 +7,7 @@ const input = ref("");
 
 <template>
   <form>
-    <BaseInput label="Input" v-model="input" />
+    <BaseInput type="text" label="Input" v-model="input" />
     <div>{{ input }}</div>
   </form>
 </template>
