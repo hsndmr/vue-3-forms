@@ -3,9 +3,11 @@ import { ref } from "vue";
 
 import BaseInput from "./components/BaseInput.vue";
 import BaseSelect from "./components/BaseSelect.vue";
+import BaseCheckbox from "./components/BaseCheckbox.vue";
 const form = ref({
   input: "",
   select: "a",
+  checkbox: false,
 });
 const options = ref(["a", "b"]);
 </script>
@@ -24,6 +26,7 @@ const options = ref(["a", "b"]);
     />
     <div>{{ form.select }}</div>
     <br />
+    <BaseCheckbox label="checkbox" v-model="form.checkbox" />
   </form>
 </template>
 
